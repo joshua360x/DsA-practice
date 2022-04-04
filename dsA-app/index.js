@@ -26,6 +26,41 @@ const newTItle = titleCase('alchemy ROCKS goLD');
 // eslint-disable-next-line no-console
 console.log('🚀 ~ file: Untitled-1 ~ line 16 ~ newTItle', newTItle);
 
+//oddish-evenish
 
+// const number = 121;
 
+// function isEven(number) {
+//   if (number % 2 === 0) {
+//     return 'Evenish';
+//   } else {
+//     return 'oddish';
+//   }
+// }
 
+// function oddishOrEvenish(number) {
+//   // let total = 0
+//   const string = number
+//     .toString()
+//     .split('')
+//     .map((string) => {
+//       return Number(string);
+//     })
+//     .reduce((previous, current) => previous + current, 0);
+//   return isEven(string);
+// }
+
+// console.log(oddishOrEvenish(number));
+
+//array at
+function at(arr, index) {
+  if (index > -1) {
+    return arr[index];
+  } else {
+    return arr[arr.length + index];
+  }
+}
+
+const newArrayAt = at([1, 2, 3], -2);
+// eslint-disable-next-line no-console
+console.log('🚀 ~ file: index.js ~ line 65 ~ newArrayAt', newArrayAt);
