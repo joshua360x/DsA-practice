@@ -64,3 +64,42 @@ function at(arr, index) {
 const newArrayAt = at([1, 2, 3], -2);
 // eslint-disable-next-line no-console
 console.log('🚀 ~ file: index.js ~ line 65 ~ newArrayAt', newArrayAt);
+
+function anagrams(wordOne, wordTwo) {
+  // 'superintended', 'unpredestined'	true
+
+  // if (wordOne.length < wordTwo.length || wordOne.length > wordTwo.length) {
+  //   return false
+  // }
+  // else {
+
+  //   let wordArr = wordOne.split('')
+  //   let wordArr2 = wordTwo.split('')
+  //   for (let i = 0; i < wordOne.length; i++) {
+  //     for (let j = 0; j < wordTwo.length; j++) {
+  //       if(wordOne[i] === wordTwo[j])
+
+  //     }
+
+  //   }
+
+  // }
+
+  // ^^^ O(2)
+
+  const firstWord = wordOne.split('').sort().join('');
+  const secondWord = wordTwo.split('').sort().join('');
+
+  if (firstWord === secondWord) {
+    return true;
+  }
+}
+
+
+// eslint-disable-next-line no-console
+console.log(anagrams('super', 'upers'));
+
+
+
+
+
