@@ -65,6 +65,37 @@ const newArrayAt = at([1, 2, 3], -2);
 // eslint-disable-next-line no-console
 console.log('🚀 ~ file: index.js ~ line 65 ~ newArrayAt', newArrayAt);
 
+
+
+
+
+// fizzBuzz (partner 1)
+function fizzBuzz(number) {
+  const numbersArr = [];
+  for (let i = 1; number >= i; i++) {
+    numbersArr.push(i);
+    if (i % 3 === 0 && i % 5 === 0) {
+      numbersArr.pop();
+      numbersArr.push('FizzBuzz');
+    } else if (i % 3 === 0) {
+      numbersArr.pop();
+      numbersArr.push('Fizz');
+    } else if (i % 5 === 0) {
+      numbersArr.pop();
+      numbersArr.push('Buzz');
+    }
+  }
+  return numbersArr;
+}
+fizzBuzz(16);
+
+console.log(fizzBuzz(16));
+
+
+
+
+
+
 function anagrams(wordOne, wordTwo) {
   // 'superintended', 'unpredestined'	true
 
@@ -100,6 +131,12 @@ function anagrams(wordOne, wordTwo) {
 console.log(anagrams('super', 'upers'));
 
 
+
+
+
+// function uniqueString(strings) {
+//   const lettersThatShouldBeOrderedAndUnique = strings.map(s) => [...new Set(s)].sort
+// }
 
 
 
