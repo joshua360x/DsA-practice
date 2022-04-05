@@ -85,6 +85,7 @@ function fizzBuzz(number) {
 }
 fizzBuzz(16);
 
+// eslint-disable-next-line no-console
 console.log(fizzBuzz(16));
 
 function anagrams(wordOne, wordTwo) {
@@ -120,6 +121,7 @@ function anagrams(wordOne, wordTwo) {
 // eslint-disable-next-line no-console
 console.log(anagrams('super', 'upers'));
 
+// eslint-disable-next-line no-unused-vars
 function uniqueString(strings) {
   const lettersThatShouldBeOrderedAndUnique = strings.map((s) =>
     [...new Set(s)].sort()
@@ -133,10 +135,10 @@ function uniqueString(strings) {
   });
 }
 
-function uniqueChar(string) {
-  const charrachter = string.split('').sort();
-  for (let i = 0; i < string.length; i++) {
-    const current = charrachter[i];
-    const prev = charrachter[i - 1];
-  }
-}
+// function uniqueChar(string) {
+//   const charrachter = string.split('').sort();
+//   for (let i = 0; i < string.length; i++) {
+//     const current = charrachter[i];
+//     const prev = charrachter[i - 1];
+//   }
+// }
