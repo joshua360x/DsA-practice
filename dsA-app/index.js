@@ -65,10 +65,6 @@ const newArrayAt = at([1, 2, 3], -2);
 // eslint-disable-next-line no-console
 console.log('🚀 ~ file: index.js ~ line 65 ~ newArrayAt', newArrayAt);
 
-
-
-
-
 // fizzBuzz (partner 1)
 function fizzBuzz(number) {
   const numbersArr = [];
@@ -90,11 +86,6 @@ function fizzBuzz(number) {
 fizzBuzz(16);
 
 console.log(fizzBuzz(16));
-
-
-
-
-
 
 function anagrams(wordOne, wordTwo) {
   // 'superintended', 'unpredestined'	true
@@ -126,17 +117,26 @@ function anagrams(wordOne, wordTwo) {
   }
 }
 
-
 // eslint-disable-next-line no-console
 console.log(anagrams('super', 'upers'));
 
+function uniqueString(strings) {
+  const lettersThatShouldBeOrderedAndUnique = strings.map((s) =>
+    [...new Set(s)].sort()
+  );
+  const duplicatesWillbeFormed = [
+    ...new Set(...lettersThatShouldBeOrderedAndUnique),
+  ];
 
+  return strings.find((string) => {
+    return duplicatesWillbeFormed.indexOf(string[0] === -1);
+  });
+}
 
-
-
-// function uniqueString(strings) {
-//   const lettersThatShouldBeOrderedAndUnique = strings.map(s) => [...new Set(s)].sort
-// }
-
-
-
+function uniqueChar(string) {
+  const charrachter = string.split('').sort();
+  for (let i = 0; i < string.length; i++) {
+    const current = charrachter[i];
+    const prev = charrachter[i - 1];
+  }
+}
